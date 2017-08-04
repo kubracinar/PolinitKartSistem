@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Yonetici/Views/Shared/_YoneticiLayout.cshtml";
+}
+
+
+@section Menu{
+
+    <ul class="sidebar-menu">
+        <li>
+            @Html.ActionLink("Müşteri Ekle", "MusteriEkle", "Musteri",new{ veri=@ViewBag.ID },null)
+        </li>
+
+        <li>
+            @Html.ActionLink("Puan Topla", "PuanTopla", "Musteri", new { veri = @ViewBag.ID }, null)
+        </li>
+
+    </ul>
+}
+<h2>Index</h2>
+
